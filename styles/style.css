@@ -1,0 +1,98 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2b2828;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+            padding: 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+        }
+
+        /* Left column styles */
+
+        .column-left {
+            flex: 2;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .column-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .logo-overlay {
+            position: absolute;
+            top: 30%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            width: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            padding: 20px 30px;
+            gap: 0.5rem; 
+        }
+
+        .logo-icon {
+            padding-right: 30px;
+            flex: 1;
+        }
+
+        .logo-text {
+            object-fit: contain;
+            flex: 4;       
+            text-align: center;      
+            font-weight: 700;
+            font-size: 2.5rem;     
+            line-height: 1;    
+            color: #ffffff;
+        }
+
+        .photo-credit {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            font-size: 0.8rem;      
+            color: rgba(0, 0, 0, 0.7); 
+            text-align: center;   
+        }    
+
+        /* Right column styles */
+
+         .column-right {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Testing Borders - Delete this block when finished */
+.column-right > div {
+    border: 1px solid red;
+    padding: 10px;
+    width: 100%; /* Ensures borders stretch to full width for visibility */
+    box-sizing: border-box;
+}
+
+
+
