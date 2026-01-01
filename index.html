@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,70 +11,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="column-left">
-                        <img src="assets/bordercollie.jpg" alt="Border collie image">
+            <img src="assets/bordercollie.jpg" alt="Border collie image">
             <div class="logo-overlay">
                 <div class="logo-icon"><img src="assets/odin-lined.png" alt="Logo Icon"></div>
                 <div class="logo-text">Border Collie</div>
             </div>
-            <div class="photo-credit">A photo by <a href="https://unsplash.com/@krafaella_" target="_blank">Rafaëlla Waasdorp</a> on Unsplash</div>
+            <div class="photo-credit">A photo by <a href="https://unsplash.com/@krafaella_" target="_blank">Rafaëlla
+                    Waasdorp</a> on Unsplash</div>
         </div>
         <div class="column-right">
-                        <div class="heading"> This is not a real online service! You know you need something like this in your life to help you realise your 
-                            deepest dreams. Sign up now to get started!
+            <div class="heading"> This is not a real online service! You know you need something like this in your life
+                to help you realise your
+                deepest dreams. Sign up now to get started!
+            </div>
+            <div class="subheading"> You know you want to.</div>
+
+            <form action="#" method="post" class="main-form">
+                <!-- User Form Fields -->
+                <div class="userform">
+                    <div class="subheading"> Let's do this!</div>
+
+                    <div class="boxes">
+
+                        <div class="input-item">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="user_first_name">
                         </div>
-                        <div class="subheading"> You know you want to.</div>
 
-                        <form action="#" method="post" class="main-form">
-<!-- User Form Fields -->
-    <div class="userform">
-        <div class="subheading"> Let's do this!</div>
-
-        <div class="boxes">
-
-        <div class="input-item">
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname" name="user_first_name" >
-        </div>
-
-        <div class="input-item">
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" name="user_last_name" >
-        </div>
-
-        <div class="input-item">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="user_email" >
-        </div>
-
-        <div class="input-item">
-        <label for="phonenumber">Phone Number</label>
-        <input type="tel" id="phonenumber" name="user_phone_number" >
-        </div>
-
-        <div class="input-item">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="user_password">
-        </div>
-
-        <div class="input-item">
-        <label for="confirm_password">Confirm Password</label>
-        <input type="password" id="confirm_password" name="user_confirm_password">
-        </div>
-
-        </div>
-    </div>
-
-    <div class="submitbutton">
-        <button type="submit">Create account</button>
-    </div>
-<!-- User Form ends -->
-</form>
-                        <div class="signinquestion">Already have an account? <a href="#">Log in</a>
+                        <div class="input-item">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="user_last_name">
                         </div>
+
+                        <div class="input-item">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="user_email">
+                        </div>
+
+                        <div class="input-item">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="tel" id="phonenumber" name="user_phone_number">
+                        </div>
+
+                        <div class="input-item">
+                            <label for="password">Password</label>
+                            <input 
+                            type="password" 
+                            id="password" 
+                            name="user_password" 
+                            minlength="8"
+                            maxlength="20"
+                            required>
+                            
+                        </div>
+
+                        <div class="input-item">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input 
+                            type="password" 
+                            id="confirm_password" 
+                            name="user_confirm_password" 
+                            minlength="8"
+                            maxlength="20"
+                            required>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="submitbutton">
+                    <button type="submit">Create account</button>
+                </div>
+                <!-- User Form ends -->
+            </form>
+            <div class="signinquestion">Already have an account? <a href="#">Log in</a>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
